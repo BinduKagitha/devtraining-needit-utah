@@ -374,7 +374,7 @@
                                                 "conditional": null,
                                                 "declarativeAction": null,
                                                 "event": {
-                                                    "apiName": "x_58872_needit.NAV_ITEM_SELECTED_RELAY_cf72918d3b7d22503090c1c643e45a4c",
+                                                    "apiName": "x_58872_needit.NAV_ITEM_SELECTED_RELAY_7afc5719337126904348a0ac4f5c7ba2",
                                                     "payload": {
                                                         "container": {
                                                             "external": {
@@ -1155,7 +1155,7 @@
                                                         "elementLabel": "Request Type radio buttons",
                                                         "eventMappings": [
                                                             {
-                                                                "eventMappingId": "EHhhheeddPvmCaaHdjjcEGKeeeewOFQI",
+                                                                "eventMappingId": "ygAmffeehhddjjCaaGkjjhheeGEABggAbbhhW",
                                                                 "isConfiguration": false,
                                                                 "offRowStorageId": null,
                                                                 "sourceEventApiName": "sn_radio_buttons.NOW_RADIO_BUTTONS#VALUE_SET",
@@ -1186,7 +1186,8 @@
                                                                                         "type": "EVENT_PAYLOAD_BINDING"
                                                                                     },
                                                                                     "heListTitle": {
-                                                                                        "type": "JSON_LITERAL"
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
                                                                                     }
                                                                                 },
                                                                                 "type": "MAP_CONTAINER"
@@ -1194,7 +1195,7 @@
                                                                             "sysId": "4ef33e9133bde2904348a0ac4f5c7b37"
                                                                         },
                                                                         "operation": null,
-                                                                        "targetId": "MJUggaeehhMwCaabffeeddOoDtnggMffGOdd",
+                                                                        "targetId": "gTnoseehhErBUeeddOjjeaaEfmGWjjkUw",
                                                                         "type": "EVENT"
                                                                     }
                                                                 ]
@@ -1504,7 +1505,7 @@
                                                 "conditional": null,
                                                 "declarativeAction": null,
                                                 "event": {
-                                                    "apiName": "x_58872_needit.NAV_ITEM_SELECTED_RELAY_cf72918d3b7d22503090c1c643e45a4c",
+                                                    "apiName": "x_58872_needit.NAV_ITEM_SELECTED_RELAY_7afc5719337126904348a0ac4f5c7ba2",
                                                     "payload": {
                                                         "container": {
                                                             "external": {
@@ -1966,7 +1967,7 @@
         <data>[]</data>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
-        <dispatched_events>82f91f453bf562503090c1c643e45a9b</dispatched_events>
+        <dispatched_events>2ffc5719337126904348a0ac4f5c7be5</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -1983,81 +1984,19 @@
     "x_58872_needit.UPDATE_LIST_QUERY_AND_TITLE": [
         {
             "broker": null,
-            "clientScript": null,
-            "clientTransformScript": "",
-            "conditional": null,
-            "declarativeAction": null,
-            "event": {
-                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                "payload": {
-                    "container": {
-                        "propName": {
-                            "type": "JSON_LITERAL",
-                            "value": "listQuery"
-                        },
-                        "value": {
-                            "binding": {
-                                "address": [
-                                    "heListQuery"
-                                ]
-                            },
-                            "type": "EVENT_PAYLOAD_BINDING"
-                        }
-                    },
-                    "type": "MAP_CONTAINER"
-                },
-                "sysId": "32408b42ff7a10109046e490703bf176"
-            },
-            "operation": null,
-            "targetId": "DKffsDvMggBkxeeeeddCeeOjeeeeddeeddnyq",
-            "type": "EVENT"
-        },
-        {
-            "broker": null,
-            "clientScript": null,
-            "clientTransformScript": "",
-            "conditional": null,
-            "declarativeAction": null,
-            "event": {
-                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                "payload": {
-                    "container": {
-                        "propName": {
-                            "type": "JSON_LITERAL",
-                            "value": "listTitle"
-                        },
-                        "value": {
-                            "binding": {
-                                "address": [
-                                    "heListTitle"
-                                ]
-                            },
-                            "type": "EVENT_PAYLOAD_BINDING"
-                        }
-                    },
-                    "type": "MAP_CONTAINER"
-                },
-                "sysId": "32408b42ff7a10109046e490703bf176"
-            },
-            "operation": null,
-            "targetId": "JPZaakfQrAkiWjjoECyXFeBRwa",
-            "type": "EVENT"
-        },
-        {
-            "broker": null,
             "clientScript": {
                 "payload": {
                     "type": "JSON_LITERAL",
                     "value": {}
                 },
-                "sysId": "cef33e9133bde2904348a0ac4f5c7b37"
+                "sysId": "d7fc5719337126904348a0ac4f5c7be0"
             },
             "clientTransformScript": "",
             "conditional": null,
             "declarativeAction": null,
             "event": null,
             "operation": null,
-            "targetId": "jUpaaJvGDAaaEDjjbsFjjbbTPNsfQ",
+            "targetId": "JggmZEvOjCaabeehhjjhhIEqRnGbbyweehh",
             "type": "CLIENT_SCRIPT"
         }
     ]
@@ -2101,7 +2040,7 @@
     "version": "3.1.0"
 }</layout>
         <macroponent_dependencies/>
-        <name>NeedIt Admin home</name>
+        <name>NeedIt Admin home Script</name>
         <output_prop_mapping/>
         <props>[]</props>
         <required_translations>[ {
@@ -2176,21 +2115,33 @@
         "name": "listTitle",
         "shape": "",
         "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "string",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "all"
+        },
+        "label": "newClientStateParam1",
+        "name": "reqType",
+        "shape": "",
+        "valueType": "string"
     }
 ]</state_properties>
         <style_config>{}</style_config>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-27 05:14:10</sys_created_on>
-        <sys_id>cf72918d3b7d22503090c1c643e45a4c</sys_id>
-        <sys_mod_count>34</sys_mod_count>
-        <sys_name>NeedIt Admin home</sys_name>
+        <sys_created_on>2025-05-28 09:57:45</sys_created_on>
+        <sys_id>7afc5719337126904348a0ac4f5c7ba2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>NeedIt Admin home Script</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_ux_macroponent_cf72918d3b7d22503090c1c643e45a4c</sys_update_name>
+        <sys_update_name>sys_ux_macroponent_7afc5719337126904348a0ac4f5c7ba2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-28 07:44:23</sys_updated_on>
+        <sys_updated_on>2025-05-28 10:09:17</sys_updated_on>
     </sys_ux_macroponent>
-    <sys_translated_text action="delete_multiple" query="documentkey=cf72918d3b7d22503090c1c643e45a4c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=7afc5719337126904348a0ac4f5c7ba2"/>
 </record_update>
